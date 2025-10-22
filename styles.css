@@ -1,0 +1,54 @@
+/* ------------------------------------------- */
+/* --- External CSS: styles.css --- */
+/* ------------------------------------------- */
+
+/* Applied to the whole document element */
+body {
+    background-color: #f8f9fa; /* Very light gray */
+    font-family: 'Georgia', serif;
+    color: #212529; /* Dark text */
+    padding: 30px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Applied to all h1 tags */
+h1 {
+    color: #007bff; /* Blue */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Reusable style applied via class attribute */
+.external-concept {
+    background-color: #e9ecef; /* Light slate background */
+    border-left: 5px solid #007bff; /* Blue accent bar */
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.nav_link {
+    background-color: #28a745; /* Green */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+}
+
+.nav_link:hover {
+    background-color: #218838;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 30px 0;
+}
