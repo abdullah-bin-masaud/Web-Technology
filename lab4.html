@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Experiment 4: Applying CSS (Inline, Internal, External Concept)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 1. INTERNAL CSS: Defined within the <style> tag in the <head> -->
+    <style>
+        body {
+            /* Internal CSS: Applied to the whole document element */
+            background-color: #f8f9fa; /* Very light gray */
+            font-family: 'Georgia', serif;
+            color: #212529; /* Dark text */
+            padding: 30px;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        h1 {
+            /* Internal CSS: Applied to all h1 tags */
+            color: #007bff; /* Blue */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* 3. EXTERNAL CSS CONCEPT (Demonstrated by a reusable Class Selector) */
+        .external-concept {
+            /* This class simulates a style rule that would be defined in a separate .css file. */
+            background-color: #e9ecef; /* Light slate background */
+            border-left: 5px solid #007bff; /* Blue accent bar */
+            padding: 15px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+
+        .nav_link {
+            background-color: #28a745; /* Green */
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 30px;
+            transition: background-color 0.3s;
+        }
+
+        .nav_link:hover {
+            background-color: #218838;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ccc;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Experiment 4: CSS Application Methods</h1>    
+    <h2>Objective: Illustrate Inline, Internal, and External CSS Concepts</h2>
+    
+    <hr>
+
+    <h3 style="color: #dc3545;">Method 2: Inline CSS Example</h3>
+    <!-- 2. INLINE CSS: Applied directly to the HTML element using the 'style' attribute -->
+    <p style="color: #dc3545; font-size: 1.1em; border: 2px solid #dc3545; padding: 10px; border-radius: 8px; background-color: #fff3f3;">
+        This paragraph is styled using **INLINE CSS**. The properties (`color: #dc3545;`, `border: 2px solid #dc3545;`, etc.) are written directly inside the `style` attribute of the element. This method offers the highest specificity and overrides other styles.
+    </p>
+
+    <h3 class="external-concept">Method 3: External CSS Concept Example (Class Selector)</h3>
+    <!-- 3. EXTERNAL CONCEPT CSS: Applied using a class defined globally -->
+    <p class="external-concept">
+        This paragraph uses the **`.external-concept` class selector**. This method simulates **External CSS**—a single rule set is defined in a centralized location (like a separate file would be) and can be applied consistently across any number of elements on the page simply by adding the `class` attribute.
+    </p>
+    
+    <h3 class="external-concept">Another External CSS Concept Example</h3>
+    <p class="external-concept">
+        Here is another paragraph demonstrating the reuse of the same **`.external-concept` class**. This shows the core benefit of external stylesheets: **reusability and centralized control.**
+    </p>
+
+    <hr>
+    
+    <h3>Method 1: Internal CSS Summary</h3>    
+    <p>
+        **Internal CSS** is defined using the `<style>` tag in the document's `<head>`. In this file, Internal CSS is used to style the entire **`body`** (background, font) and all **`h1`** tags (color, alignment).
+    </p>
+
+    <a class="nav_link" href="../../Web_Technologies_index.html">Go Back</a>
+</body>
+</html>
